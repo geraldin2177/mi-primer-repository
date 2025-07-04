@@ -17,9 +17,6 @@ document.addEventListener('contextmenu',function(e){
   alert("Click derecho bloqueado")
 });
 //bloqueo  de la convinación de teclas (ctrl + c)
-
-
-
 document.addEventListener('keydown',function(e){
   if(e.ctrlKey && e.key === 'c'){
  e.preventDefault();

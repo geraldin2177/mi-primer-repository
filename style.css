@@ -1,7 +1,10 @@
+body{
+  background: var(--main-color) !important;
+}
 
 
 :root {
-  --main-color: #6f42c1;  
+  --main-color: #b595f0;  
   --accent-color: #b5e856; 
   --text-color: #1a1a1a;
   --bg-light: #67efcf;
@@ -115,4 +118,8 @@ textarea:focus {
   border-color: var(--accent-color);
   box-shadow: 0 0 0 2px rgba(191, 169, 143, 0.25); 
   outline: none;
+}
+.card-img-top {
+  height: 250px; 
+  object-fit: cover;
 }
