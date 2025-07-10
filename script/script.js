@@ -22,3 +22,20 @@ document.addEventListener('keydown',function(e){
  e.preventDefault();
    alert("presionaste una tecla")}
 });
+
+ document.addEventListener("DOMContentLoaded", function () {
+    const inputNombre = document.getElementById("name");
+    const mensajeError = document.getElementById("mensaje-error");
+
+    inputNombre.addEventListener("input", function () {
+      const soloLetras = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]*$/;
+
+      if (!soloLetras.test(inputNombre.value)) {
+        mensajeError.classList.remove("d-none");
+        inputNombre.classList.add("is-invalid");
+      } else {
+        mensajeError.classList.add("d-none");
+        inputNombre.classList.remove("is-invalid");
+      }
+    });
+  });
