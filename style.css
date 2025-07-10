@@ -131,3 +131,6 @@ p {
   color: #3d3d3d;
   font-family: 'Georgia', serif;
 }
+.nav-link.active:hover {
+  color: #56d9e8 !important; 
+}
